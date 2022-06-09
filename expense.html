@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="expense.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budgeting App 💵</h1>
+        <div class="balance__container">
+            <h2>Balance <i class="uil uil-money-bill-stack"></i></h2>
+            <p class="balance"></p>
+        </div>
+        <div class="cashflow__container">
+            <div class="income__container">
+                <h2>Income</h2>
+                <p class="income">$100</p>
+            </div>
+            <div class="exspense__container">
+                <h2>Expense</h2>
+                <p class="expense">$100</p>
+            </div>
+        </div>
+        <div class="transaction__container">
+            <h2>Transaction History 📜</h2>
+            <ul class="transaction">
+                <!-- <li>
+                    <p>Salary</p>
+                    <div>
+                        <span class="income-amount">$1000 ✨</span>
+                        <button class="cancel-button"><i class="uil uil-times"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <p>Groceries</p>
+                    <div>
+                        <span class="expense-amount">$500 🔥</span>
+                        <button><i class="uil uil-times"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <p>Piano</p>
+                    <div>
+                        <span class="expense-amount">$200 🔥</span>
+                        <button><i class="uil uil-times"></i></button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="form__container">
+            <h2>Add new transaction 🏷️</h2>
+            <form onsubmit="return false">
+                <input type="text" class="name" placeholder="Name">
+                <input type="number" class="number" placeholder="Amount">
+                <button class="income-button">Income <i class="uil uil-money-withdraw"></i></button>
+                <button class="expense-button">Expense <i class="uil uil-money-insert"></i></button>
+            </form>
+            
+        </div>
+    </div>
+    <!-- <button class="uil uil-times"></button> -->
+    <script src="expense.js"></script>
+</body>
+</html>

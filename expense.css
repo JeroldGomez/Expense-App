@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* all elements */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* width: 1000px; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* header */
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* balance section */
+.balance__container {
+    width: 100%;
+    margin-top: 20px;
+}
+.balance__container h2 {
+    font-weight: 700;
+}
+.balance__container p {
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
+}
+    
+/* cashflow section */
+.cashflow__container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
+.cashflow__container p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.cashflow__container .income__container p{
+    color: #26A344;
+}
+.cashflow__container .exspense__container p{
+    color: #C82929;
+}
+
+/* transaction section */
+.transaction__container {
+    margin-top: 20px;
+}
+.transaction__container #transaction {
+    list-style: none;
+}
+.transaction__container li{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+    padding: 10px;
+    /* background-color: red; */
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.transaction__container li > p {
+    margin-top: 10px;
+}
+.transaction__container span {
+    font-weight: 600;
+}
+.transaction__container button {
+    padding: 5px;
+    /* padding-bottom: 5px; */
+    background-color: #fff;
+    border: 1px solid #333;
+    outline: none;
+    border-radius: 2px;
+    color: #333;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+.transaction__container button:hover {
+    background-color: #CF2D2D;
+    border: 1px solid #CF2D2D;
+    color: white;
+}
+
+/* form container */
+.form__container {
+    margin-top: 20px;
+}
+.form__container form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.form__container input{
+    font-size: 16px;
+    padding: 6px 5px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(189, 189, 189);
+    border-radius: 4px;
+}
+.form__container button {
+    padding: 10px;
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+.income-button, .expense-button {
+    transition: all 0.2s ease;
+
+}
+.form__container .income-button:hover {
+    background-color: #26A344;
+    border: 1px solid #26A344;
+    border-radius: 2px;
+    color: white;
+}
+.form__container .expense-button:hover {
+    background-color: #CF2D2D;
+    border: 1px solid #CF2D2D;
+    border-radius: 2px;
+    color: white;
+}
+
+/* button section */
