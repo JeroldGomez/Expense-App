@@ -12,6 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: url(California.jpg);
+    background-size: cover;
 }
 
 /* header */
@@ -19,10 +21,16 @@ h1 {
     text-transform: uppercase;
     text-align: center;
 }
+.container {
+    background-color: rgb(252, 240, 228);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
 
 /* balance section */
 .balance__container {
-    width: 100%;
+    width: 70vh;
     margin-top: 20px;
 }
 .balance__container h2 {
@@ -38,18 +46,28 @@ h1 {
 .cashflow__container {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     width: 100%;
+    border-top: 1px solid rgb(167, 167, 167);
+    border-bottom: 1px solid rgb(167, 167, 167);
+    padding: 10px 0;
 }
 .cashflow__container p {
     font-size: 20px;
     font-weight: bold;
 }
-.cashflow__container .income__container p{
+.income__container {
+    border-right: 1px solid #ccc;
+    padding: 0 100px ;
+}
+.income__container p{
     color: #26A344;
 }
-.cashflow__container .exspense__container p{
+.exspense__container {
+    padding: 0 100px;
+}
+.exspense__container p{
     color: #C82929;
 }
 
