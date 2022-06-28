@@ -40,7 +40,6 @@ const updateState = () => {
     }
 
     balance = income - expense
-    // console.log(balance, income, expense)
 
     state.balance = balance
     state.income = income
@@ -54,8 +53,6 @@ const updateState = () => {
 }
 
 // for buttons to work
-
-
 const incomeExpenseTransaction = (name, amount, type) => {
     if (name !== '' && amount !== '') {
         let transact = {
@@ -84,13 +81,6 @@ const clickButton = () => {
         incomeExpenseTransaction(nameInputElement.value, numberInputElement.value, 'expense')
     })
 }
-// const addIncome = () => {
-//     incomeExpenseTransaction(nameInputElement.value, numberInputElement.value, 'income')
-// }
-
-// const addExpense = () => {
-//     incomeExpenseTransaction(nameInputElement.value, numberInputElement.value, 'expense')
-// }
 
 const deleteButton = (event) => {
     let idConfirmation = Number(event.target.getAttribute('data-id'))
@@ -107,10 +97,7 @@ const deleteButton = (event) => {
     updateState()
 }
 
-    
-
 // inputing the numbers
-
 const render = () => {
     // balance, income, expense
     balanceElement.innerHTML = `$${state.balance}`
